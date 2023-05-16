@@ -101,13 +101,13 @@ header h1 span{
   padding: 2rem;
   border:1px solid #777;
   text-align: center;
-  animation: slide ease .8s;
+  animation: slide ease 1s;
 }
 @keyframes slide{
-  from{
-    transform: translateY(-30);
+  0%{
+    transform: translateY(-30rem);
   }
-  to{
+  100%{
     transform: translateY(0);
 
   }
@@ -120,4 +120,17 @@ header h1 span{
   /* justify-content: flex-end; */
   cursor: pointer;
   /* align-items: flex-end; */
+}
+.slide-up{
+  animation: slide-up ease 1.5s;
+  
+}
+@keyframes slide-up{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-50rem);
+
+  }
 }
