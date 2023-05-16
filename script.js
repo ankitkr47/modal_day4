@@ -12,6 +12,7 @@ const closepopup = () => {
     modal_content.classList.add("slide-up");
     setTimeout(() => {
         modal.style.display = "none";
+        modal_content.classList.remove("slide-up");
     }, 500);
 };
 
